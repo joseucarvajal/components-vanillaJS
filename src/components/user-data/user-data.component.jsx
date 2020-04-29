@@ -23,7 +23,7 @@ const UserData = (user) => {
                     </label>
                     <input type="text" class="user-data__input app-input-req">
                 </div>
-                <div class="user-data__form-group">
+                <div class="user-data__form-group user-data__gender-group">
                     <span class="user-data__gender">
                         <input type="radio">
                         <label>Female</label>
@@ -33,7 +33,7 @@ const UserData = (user) => {
                         <label>Male</label>
                     </span>
                 </div>
-                <div class="user-data__form-group">
+                <div class="user-data__form-group user-data__btn-save">
                     <span class="app-btn-primary">Save</span class="app-btn">
                 </div>
             </form>
