@@ -3,6 +3,34 @@ header {
     font-size: var(--default-font-size);
 }
 
+.container{
+    display: flex;    
+}
+
+.user-register-section{
+    padding-left: 5.5rem;
+    flex: 0 0 41%;
+    border: var(--border-test);
+
+    @media screen and (max-width: var(--responsive-medium-large)) {
+        padding-left: 0;
+    }
+}
+
+.tech-info-section{
+    flex: 0 0 41%;    
+    border: var(--border-test);
+}
+
+.social-med-section{    
+    flex: 0 0 18%;    
+    border: var(--border-test);
+}
+
+section{
+    height: 100vh;
+}
+
 footer {
     margin-top: 1rem;
     font-size: 1.2rem;

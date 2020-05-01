@@ -1,8 +1,21 @@
 //Base
 :root {
-    --color-gray-light: #bbb;
+    
+    --color-primary: #54C3E1;
+    --color-primary-light: #6BC378;
+    --color-primary-dark: #5DA49B;
+
+    --color-light: #FFF;
+    --color-gray-light-1: #bbb;
+    --color-gray-light-2: #F5F5F5;
+
     --color-gray-dark: #777;
     --default-font-size: 1.6rem;
+
+    --border-test: 1px var(--color-gray-dark) solid;
+
+    --responsive-medium-large: 1025px;
+    --responsive-medium: 900px;
 }
 
 *,
@@ -23,6 +36,7 @@ body {
     /*font-size: 16px;*/
     line-height: 1.7;
     color: var(--color-gray-dark);
+    background-color: var(--color-gray-light-2);
 }
 
 //Shared components
