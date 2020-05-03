@@ -1,74 +1,58 @@
-.nav-bar {    
-    font-size: 1.7rem;
-    margin-top: 3rem;
+.nav-bar {
+    margin-top: 1rem;
+    font-size: 1.6rem;
 
-    &__nav {
-        display: flex;
-        justify-content: space-around;
+    &__list {
         list-style-type: none;
+        display: flex;
     }
 
-    &__opt {
+    &__item {
         position: relative;
-        cursor: pointer;        
-        text-align: center;
-        transition: background-color 5s, color 0.8s;
-        padding: 0 2rem;
-
-        &:hover {
-            color: var(--color-light);
-            background-color: transparent;
-        }
+        padding: 0.2rem 1.1rem;
+        background-color: var(--color-primary-dark);
+        margin-right: 0.15rem;
+        display: flex;
 
         &::before {
-            content: " ";
+            content: "";
             position: absolute;
-            display: inline-block;
             top: 0;
             left: 0;
-            width: 0.2em;
-            height: 0.1em;
-            background-color: transparent;
+            height: 100%;
+            width: 0.6rem;
+            display: inline-block;
 
-            transform: translateY(0.64em);
+            transform: scaleY(0);
 
-            transition-timing-function: ease-in;
-            transition-property: transform, width;
-            transition-duration: 0.18s, 0.2s;
-            transition-delay: 0s, 0.28s;
-
-            @media screen and (max-width: var(--responsive-medium)) {
-                transform: translateY(1.5em);
-            }    
-        
+            transition: color 0.27s, transform 0.27s, width 0.12s 0.27s;
         }
 
-        &:hover::before {
-            content: " ";
-            background-color: var(--color-primary-light);
-            transform: translateY(0.64em) scaleY(15);
+        &:hover::before,
+        &--active::before {
+            background-color: var(--color-primary);
+            color: var(--color-gray-light-3);            
+            transform: scaleY(1);
             width: 100%;
+        }
 
-            z-index: -1;
-
-
-            @media screen and (max-width: 900px) {
-                transform: translateY(1.3em) scaleY(32);
-            }            
+        &:active::before
+        {            
+            background-color: var(--color-primary);
+            opacity: 0.8;
         }
     }
 
-    &__opt:hover &__icon {
-        fill: var(--color-light);
+    &__link {
+        text-decoration: none;
+        color: var(--color-gray-light-2);
+        z-index: 1;
     }
 
     &__icon {
-        height: 1.3rem;
-        width: 1.3rem;
+        width: 1.2rem;
+        height: 1.2rem;
         margin-right: 0.1rem;
-        transition: fill 0.4s;
-    }
-
-    &__lbl {
+        fill: currentColor;
     }
 }

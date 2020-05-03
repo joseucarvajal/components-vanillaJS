@@ -1,18 +1,24 @@
 //Base
-:root {
-    
-    --color-primary: #54C3E1;
+:root {  
+
+    --color-primary: #EE6588;
+    --color-primary-light: #F69560;
+    --color-primary-dark: #937F8F;
+
+/*     --color-primary: #54C3E1;
     --color-primary-light: #6BC378;
     --color-primary-dark: #5DA49B;
-
+ */
     --color-light: #FFF;
     --color-gray-light-1: #bbb;
     --color-gray-light-2: #F5F5F5;
+    --color-gray-light-3: #FAFAFA;
 
-    --color-gray-dark: #777;
+    --color-gray-dark-1: #777;
+    --color-gray-dark-2: #555;
     --default-font-size: 1.6rem;
 
-    --border-test: 1px var(--color-gray-dark) solid;
+    --border-test: 1px var(--color-gray-dark-1) solid;
 
     --responsive-medium-large: 1025px;
     --responsive-medium: 900px;
