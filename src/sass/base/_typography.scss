@@ -1,0 +1,15 @@
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgb(var(--font-base-color));
+    background-color: rgb(var(--color-gray-light-2));
+}
+
+
+.heading-3 {
+    font-size: 1.6rem;    
+    color: rgb(var(--color-primary-dark));
+    letter-spacing: .8rem;
+    //text-shadow: .1rem .1rem .8rem var(--color-primary);
+}

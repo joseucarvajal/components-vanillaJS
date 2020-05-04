@@ -1,5 +1,5 @@
 .nav-bar {
-    margin-top: 1rem;
+    margin-top: 4rem;
     font-size: 1.6rem;
 
     &__list {
@@ -10,7 +10,7 @@
     &__item {
         position: relative;
         padding: 0.2rem 1.1rem;
-        background-color: var(--color-primary-dark);
+        background-color: rgb(var(--color-primary-dark));
         margin-right: 0.15rem;
         display: flex;
 
@@ -20,32 +20,32 @@
             top: 0;
             left: 0;
             height: 100%;
-            width: 0.6rem;
+            width: 0.4rem;
             display: inline-block;
 
             transform: scaleY(0);
 
-            transition: color 0.27s, transform 0.27s, width 0.12s 0.27s;
+            transition: color .25s, transform .25s ease-out, width .12s .25s;
         }
 
         &:hover::before,
         &--active::before {
-            background-color: var(--color-primary);
+            background-color: rgb(var(--color-primary));
             color: var(--color-gray-light-3);            
             transform: scaleY(1);
             width: 100%;
         }
 
         &:active::before
-        {            
-            background-color: var(--color-primary);
-            opacity: 0.8;
+        {
+            background-color: rgb(var(--color-primary));
+            opacity: 0.7;
         }
     }
 
     &__link {
         text-decoration: none;
-        color: var(--color-gray-light-2);
+        color: rgb(var(--color-gray-light-2));
         z-index: 1;
     }
 

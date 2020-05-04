@@ -1,0 +1,14 @@
+.button-terciary {    
+    display: inline-block;
+    width: 6em;
+    text-align: center;
+    font-size: 1.2rem;    
+    cursor: pointer;
+    box-shadow: var(--box-shadow-small-1);
+    background-color: rgb(var(--color-primary-dark));
+    color: rgb(var(--color-light-1));
+
+    padding: .45rem;
+
+    letter-spacing: .3rem;
+}

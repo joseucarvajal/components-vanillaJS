@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "dev": "rmdir /s /q dev && rmdir /s /q .cache && parcel public/index.html --out-dir dev -p 3000",
+        "dev": "parcel public/index.html --out-dir dev -p 3000",
         "build": "parcel build public/index.html --out-dir dist --public-url ./"
     },
     "keywords": [],

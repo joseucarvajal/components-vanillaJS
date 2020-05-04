@@ -1,0 +1,51 @@
+.form-input {
+    color: inherit;
+    font-family: inherit;
+
+    border: none;
+    background-color: rgba(var(--color-light-1), 0.9);
+    border-bottom: var(--input-transparent-border);
+
+    //Animate border when focus
+    transition: all .3s ease-in;
+
+    &:focus {
+        outline: none;
+        box-shadow: var(--box-shadow-small-1);
+        border-bottom: var(--input-valid-border);
+    }
+
+    &:focus:invalid {
+        border-bottom: var(--input-invalid-border);
+    }
+
+    &:focus:invalid ~ .form-lbl  {
+        color: rgba(var(--invalid-input-color));
+    }
+
+    &::placeholder {
+        color: rgb(var(--color-gray-dark-1), 0.6);
+    }
+
+    &:placeholder-shown ~ .form-lbl {
+        opacity: 0;
+        transform: translate(1.2rem, -2.8rem);
+    }
+
+    &:focus {
+        border-bottom: var(--input-valid-border);
+    }
+
+    &:focus ~ .form-lbl {
+        font-weight: bolder;
+    }    
+}
+
+.form-lbl {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: rgba(var(--font-base-color), .9);
+    transform: translate(1rem, .35rem);   
+
+    transition: all .2s ease-out;
+}

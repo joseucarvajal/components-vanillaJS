@@ -1,3 +1,19 @@
-.user-section {
-    
+.user-registration {
+    position: absolute;
+    top: 13rem;
+    width: 120%;
+    padding: 3rem 2rem;
+    background-image: linear-gradient(to right bottom, rgb(var(--color-primary-light)), rgb(var(--color-primary)));
+    box-shadow: var(--box-shadow-1);
+
+    &__frm {
+        padding: 2.7rem 2rem;
+        background-image: linear-gradient(103deg, 
+                                        rgba(var(--color-light-darker-1), .8) 0%, 
+                                        rgba(var(--color-light-darker-1), .8) 50%, 
+                                        transparent 50%),
+                                    url("../../../public/img/user-register-backg.jpg");
+
+        background-size: 100%;
+    }
 }
